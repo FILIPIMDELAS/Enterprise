@@ -60,7 +60,7 @@ body{
     color: white;
 }
 
-.but_cabecalho:active{
+.but_cabecalho, .but_servico:active{
     opacity: 0.7;
 }
 
@@ -152,9 +152,129 @@ body{
 
 .container2{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 100vh;
     width: 99vw;
     background-size: 100%;
     background-color: black;
+}
+
+.box_cabecalho_servico{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 400px;
+    background-color: #0000;
+    gap: 40px;
+}
+
+.titulo_servico{
+    display: flex;
+    position: absolute;
+    color: #c1ff72;
+    font-family: Open Sans Bold;
+    font-size: 60px;
+}
+
+.conteudo_servico1{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    width: 600px;
+    color: white;
+    text-indent: 60px;
+    font-family: Open Sans Bold;
+    font-size: 20px;
+}
+
+.conteudo_servico2{
+    display: flex;
+    position: absolute;
+    top: 325px;
+    width: 600px;
+    color: white;
+    text-indent: 60px;
+    font-family: Open Sans Bold;
+    font-size: 20px;
+}
+
+.img_carta-email{
+    display: flex;
+    position: absolute;
+    top: 270px;
+    left: 630px;
+    height: 30px;
+    width: 40px;
+    transform: rotate(-15deg);
+}
+
+.img_celular{
+    display: flex;
+    position: absolute;
+    top: 400px;
+    left: 630px;
+    height: 67.5px;
+    width: 90px;
+    transform: rotate(20deg);
+}
+
+.img_foguete{
+    display: flex;
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    height: 67.5px;
+    width: 90px;
+
+}
+
+.img_lampada{
+    display: flex;
+    position: absolute;
+    top: 530px;
+    left: 470px;
+    height: 60px;
+    width: 80px;
+    transform: rotate(-25deg);
+}
+
+.but_box_servico{
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 1200px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.but_servico{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    background-color: #0000;
+    color: white;
+    border: none;
+    font-family: Open Sans Bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.img_detalhe{
+    display: flex;
+    position: absolute;
+    top: -120px;
+    left: -200px;
+    height: 150px;
+    width: 266px; 
+}
+
+.img_detalhe2{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+    height: 150px;
+    width: 266px;
 }
