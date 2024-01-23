@@ -8,6 +8,7 @@
     <title>Site CosmicCod</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <div class="container" >   
         <img class="img" src="./Imagens/COSMIC.png" alt="logo">
         <div class="box_cabecalho">
@@ -16,15 +17,15 @@
             <button class="but_cabecalho" type="button">SERVIÇOS</button>
             <button class="but_cabecalho" type="button">CONTATO</button> 
         </div>
-        <div class="box_contat_whats">
-            <img class="img_whats" src="./Imagens/whatsapp.png" alt="icon_whats">
-            (62) 98104-6068
+        <div>
+            <a class="box_contat_whats" href="https://wa.me/+5562981046068/?text=Olá%20queria%20mais%20informações%20sobre%20a%20cosmic%20cod!" target="_blank"><img class="img_whats" src="./Imagens/whatsapp.png" alt="icon_whats">
+            (62) 98104-6068</a>
         </div>
         <div class="rede_social">
-            <img class="img_rede_social_face" src="./Imagens/facebook.png" alt="logo_face">
-            <img class="img_rede_social_insta" src="./Imagens/instagran.png" alt="logo_insta">
-            <img class="img_rede_social_yout" src="./Imagens/youtube.png" alt="logo_yout">
-            <img class="img_rede_social_link" src="./Imagens/linkedin.png" alt="logo_link">
+            <a href="https://www.facebook.com/filipecristovamdocarmo" target="_blank"><img class="img_rede_social_face" src="./Imagens/facebook.png" alt="logo_face"></a>
+            <a href="https://www.instagram.com/filipe_kc/" target="_blank"><img class="img_rede_social_insta" src="./Imagens/instagran.png" alt="logo_insta"></a>
+            <a href="https://www.youtube.com/@jesusrosales6326" target="_blank"><img class="img_rede_social_yout" src="./Imagens/youtube.png" alt="logo_yout"></a>
+            <a href="https://www.linkedin.com/in/filipe-cristovam-do-carmo-9b3845234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="img_rede_social_link" src="./Imagens/linkedin.png" alt="logo_link"></a>
         </div>
         <div>
             <img class="img_logo_fundo" src="./Imagens/logo grande.png" alt="logo_grande_principal">
@@ -57,7 +58,21 @@
     
 </body>
 
-<script>_
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+
+    function topFunction() {
+    document.documentElement.scrollTop = 0;
+    }
+    
     //cases
     //que somos     
     //serviços
