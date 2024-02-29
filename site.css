@@ -1,26 +1,8 @@
+@charset "UTF-8";
+
 body{
   margin: 0px;
 }
-
-.container{
-    display: flex;
-    position: relative;
-    height: 100vh;
-    width: 99vw;
-    background-size: 100%;
-    justify-content: center;
-    background-image: url('./Imagens/logo\ fundo.png');
-    background-size: cover;
-}
-
-.container::before{
-    display: flex;
-    background: linear-gradient(180deg, rgba(21, 55, 100, 0.95), rgba(0, 0, 0));
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-}  
 
 #myBtn {
     display: none;
@@ -37,10 +19,31 @@ body{
     border-radius: 10px;
     font-size: 18px;
    }
-   
-   #myBtn:hover {
+
+#myBtn:hover {
     background-color: #555; 
-   }
+}
+
+.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    justify-content: center;
+    background-image: url('./Imagens/logo\ fundo.png');
+    background-size: cover;
+}
+
+.container::before{
+    display: flex;
+    background: linear-gradient(180deg, rgba(21, 55, 100, 0.95), rgba(0, 0, 0));
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}  
+   
 
 .img{
     display: flex;
@@ -56,7 +59,9 @@ body{
 
 .box_cabecalho{
     display: flex;
+    justify-items:  center;
     background-color: #0000;
+    align-items: center;
     justify-content: center;
     padding: 10px;
     height: 50px;
@@ -80,12 +85,16 @@ body{
     color: white;
 }
 
-.but_cabecalho, .but_servico:active{
+.but_cabecalho:active, .but_servico:active{
     opacity: 0.7;
 }
 
 a{
     text-decoration: none;
+}
+
+#id_img_whatsapp:hover{
+    opacity: 0.5;
 }
 
 .box_contat_whats{
@@ -123,6 +132,10 @@ a{
 
 .img_rede_social_face, .img_rede_social_insta, .img_rede_social_yout, .img_rede_social_link{
    padding: 2px;
+}
+
+#id_img_rede_social:hover{
+    opacity: 0.5;
 }
 
 .img_rede_social_face{
@@ -164,6 +177,7 @@ a{
     font-size: 25px;
     text-align: center;
 }
+
 .img_circulo_fundo{
     display: flex;
     position: absolute;
@@ -174,13 +188,17 @@ a{
     opacity: 0.3;
 }
 
+mark{
+    background-color: #0000;
+    color: #c1ff72;
+}
 .container2{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 100vh;
-    width: 99vw;
+    width: 100%;
     background-size: 100%;
     background-color: black;
 }
@@ -301,4 +319,184 @@ a{
     left: 1000px;
     height: 150px;
     width: 266px;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 230vh;
+    width: 100%;
+    background-size: 100%;
+    background: black;
+}
+
+.box_cabecalho_quem_somos{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 400px;
+    background-color: #0000;
+    gap: 40px;
+}
+
+.box_cabecalho_quem_somos h1{
+    display: flex;
+    position: absolute;
+    width: 450px;
+    color: #c1ff72;
+    font-family: Open Sans Bold;
+    font-size: 60px;
+}
+
+.box_cabecalho_quem_somos p{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    width: 600px;
+    color: white;
+    text-indent: 60px;
+    font-family: Open Sans Bold;
+    font-size: 20px;
+}
+
+.sub_pessoas{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+
+.pessoas_felipe{
+    display: flex;
+    position: absolute;
+    top: 630px;
+    left: 400px;
+    background-color: #0000;
+    gap: 40px;
+}
+
+.pessoas_felipe h2{
+    display: flex;
+    position: absolute;
+    width: 450px;
+    color: #c1ff72;
+    font-family: Open Sans Bold;
+    font-size: 30px;
+}
+
+.pessoas_felipe p{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    width: 600px;
+    color: white;
+    text-indent: 60px;
+    font-family: Open Sans Bold;
+    font-size: 20px;
+}
+
+.pessoas_felipe img{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    height: 350px;
+    width: 250px;
+}
+
+.pessoas_felipe span{
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 560px;
+    left: 180px;
+    width: 200px;
+    opacity: 0.7;
+}
+
+.pessoas_filipe{
+    display: flex;
+    position: absolute;
+    top: 1400px;
+    left: 400px;
+    background-color: #0000;
+    gap: 40px;
+}
+
+.pessoas_filipe h2{
+    display: flex;
+    position: absolute;
+    width: 450px;
+    color: #c1ff72;
+    font-family: Open Sans Bold;
+    font-size: 30px;
+}
+.pessoas_filipe p{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    width: 600px;
+    color: white;
+    text-indent: 60px;
+    font-family: Open Sans Bold;
+    font-size: 20px;
+}
+
+.pessoas_filipe img{
+    display: flex;
+    position: absolute;
+    aspect-ratio: 9/16;
+    height: 400px;
+    top: 200px;
+    left: 170px;
+}
+
+.pessoas_filipe span{
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 610px;
+    left: 200px;
+    width: 200px;
+    opacity: 0.7;
+}
+
+.transicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: 100%;
+    background: linear-gradient(180deg, black , rgb(187, 187, 187));
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    height: 30vh;
+    width: 100%;
+    background-size: 100%;
+    background:rgb(187, 187, 187);
+}
+
+.pag{
+    display: flex;
+    
+    flex-direction: column;
+    margin: 20px;
+}
+
+li{
+    color: black;
+}
+
+li:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
