@@ -1,0 +1,278 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url(./Image/milad-fakurian-GJKx5lhwU3M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.img_fgr{
+    display: flex;
+    height: 50%;
+    object-fit: contain;
+    margin: 2% 0px 0px 10%;
+}
+
+.i_cabecalho{
+    display: flex;
+    margin: 0px 10% 0px auto;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+#icone1, #icone2{
+    font-size: 2rem;
+    color: rgb(165, 48, 48);
+}
+
+#icone3{
+    font-size: 4em;
+    margin: -5px 10px 0px 10px;
+    color: rgb(165, 48, 48);
+}
+
+.logout{
+    color: rgb(165, 48, 48);
+    text-decoration: none;
+}
+
+.logout:hover{
+    opacity: 0.7;
+}
+
+h1{
+    margin: 0px 0px 0px 170px;
+    color: rgb(165, 48, 48);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4% 10% 0px 10%;
+    gap: 40px;
+    width: 80%;
+}
+
+.sec_estacas, .sec_radier, .sec_perifericas, .sec_alvest{
+    height: 50vh;
+    width: 27%;
+
+    & a{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+        & img{
+            height: 100%;
+            width: 100%;
+            filter: grayscale(60%);
+            animation: 2s;
+            -webkit-animation: animate-div 2s;
+        }
+
+        & label{
+            position: absolute;
+            max-width: 230px;
+            font-size: 1.5em;
+            color: white;
+            z-index: 10;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            -webkit-animation: animate-div 2s;
+            text-align: center;
+        }
+    }
+}
+
+@-webkit-keyframes animate-div {
+    from { opacity: 0; margin-top: -150px;}
+    to { opacity: 1;margin-top: 0px;}
+}
+
+.sec_estacas:hover, .sec_radier:hover, .sec_perifericas:hover, .sec_alvest:hover{
+    scale: 1.05;
+}
+
+.divisao1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-width: 80%;
+}
+
+.divisao2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-width: 80%;
+}
+
+input{
+    accent-color: black ;
+}
+
+#but_animacao{
+    background-color: #0000;
+
+    & i{
+        font-size: 4em;
+    }
+
+    & i:hover{
+        cursor: pointer;
+        color: rgb(104, 104, 104);
+    }
+}
+
+.input-s{
+    display: center;
+    margin: auto;
+
+    & input{
+        margin: 0px 4px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .img_fgr{
+        height: 40%;
+        margin: 35px 0px 0px 10%;
+    }
+    
+    .i_cabecalho{
+        margin: 0px 10% 0px auto;
+    }
+    
+    #icone1, #icone2{
+        font-size: 2em;
+    }
+
+    #icone3{
+        font-size: 3em;
+    }
+
+    h1{
+        margin: 0% auto 10% auto;
+    }
+    
+    .container{
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: left;
+        margin: 0px;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .divisao1{
+        display: flex;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .divisao2{
+        display: flex;
+        width: 50%;
+        min-width: 50%;
+        padding-left: 30px;
+    }
+
+    .sec_estacas, .sec_radier, .sec_perifericas, .sec_alvest{
+        scale: 0.95;
+        width: 45%;
+    }
+
+    #but_animacao{
+        display: none;
+    }
+
+    .input-s{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .img_fgr{
+        height: 35%;
+        margin: 8% 0px 0px 7%;
+    }
+    
+    .i_cabecalho{
+        margin: 0px 10% 0px auto;
+    }
+    
+    #icone1, #icone2{
+        font-size: 1.5em;
+    }
+
+    #icone3{
+        font-size: 2em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    
+    .container{
+        justify-content: start;
+        overflow-x: visible;
+        overflow-y: scroll;
+        flex-direction: column;
+        width: 70%;
+        margin: 4% auto 0px auto;
+    }
+
+    .divisao1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .divisao2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .sec_estacas, .sec_radier, .sec_perifericas, .sec_alvest{
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    #but_animacao{
+        display: none;
+    }
+
+    .input-s{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}

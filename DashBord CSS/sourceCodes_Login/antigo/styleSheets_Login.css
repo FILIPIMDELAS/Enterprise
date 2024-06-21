@@ -1,0 +1,114 @@
+*{
+padding: 0px;
+border: 0px;
+margin: 0px;
+}
+
+body{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/pexels-tatiana-fet-1105766.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    width: 100vw;
+}
+
+form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: rgba(28, 28, 29, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.img_lyon{
+    display: block;
+    background-image: url(./image/img_lyon.jpg);
+    background-repeat: no-repeat;
+    height: 9.56em;
+    background-size: 100%;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.div_login{
+    display: block;
+    padding: 0pc 30px 30px 30px;
+    
+}
+
+.div_email, .div_senha{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: left   ;
+    width: auto;
+    justify-content: center;
+}
+
+.div_email{
+    margin-top: 40px;
+}
+
+input{
+    display: block;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1px 5px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    width: 17em;
+    height: 1.7em;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.p_erro{
+    padding-left: 5px;
+    font-size: 0.7em;
+    visibility: hidden;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.rec_senha{
+    background-color: #0000;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 15px;
+
+}
+
+.rec_senha:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.but_login{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: auto;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    font-weight: bolder;
+    font-size: 0.9em;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.but_login:hover{
+    color: rgba(27, 27, 27, 0.6);
+    cursor: pointer;
+}

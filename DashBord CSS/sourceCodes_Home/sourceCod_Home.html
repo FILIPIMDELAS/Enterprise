@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFT - HOME</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styleSheet_Home.css">
+</head>
+<body>
+    <header>    
+        <img class="img_fgr" src="./Image/Logo_FGR_w1sl43.png" alt="">
+        <div class="i_cabecalho">
+            <i id="icone1" class="material-icons">search</i>
+            <i id="icone2" class="material-icons">notifications</i>
+            <i id="icone3" class="material-icons">account_circle</i>
+            <a href="../sourceCodes_Login/sourceCode_Login.html" class="logout">Sair</a>
+        </div>
+    </header>
+    <h1>Dashboard</h1>
+    <div class="container">
+        <button id="but_animacao" onclick="animacao1()"><i class="material-icons">chevron_left</i></button>
+        <div class="divisao1" id="divisao1">    
+            <section class="sec_estacas">
+                <a href="https://app.powerbi.com/groups/me/reports/ba277f37-aff4-4ae4-a0ec-46d03662264d/ReportSection7b4462058f99b086ac77?experience=power-bi">
+                <img src="./Image/restricoes.jpg" alt="">
+                <label for="sec_estacas">RESTRIÇÕES</label>
+                </a>
+            </section>
+            <section class="sec_radier">
+                <a href="https://app.powerbi.com/groups/me/reports/ab293d5c-d8ea-491b-9688-aa86236c0c95/ReportSection?experience=power-bi">
+                <img src="./Image/produtividade.jpeg" alt="">
+                <label for="sec_radier">PRODUTIVIDADE ENGENHEIROS</label>
+                </a>
+            </section>
+            <section class="sec_perifericas">
+                <a href="https://app.powerbi.com/groups/me/reports/9fd260de-a433-4999-8726-d987e47d5fba/ReportSection33f94474461ba7206573?experience=power-bi">
+                <img src="./Image/cacamba 1.jpg" alt="">
+                <label for="sec_perifericas">CAÇAMBAS</label>
+                </a>
+            </section>
+            <section class="sec_alvest">
+                <a href="https://app.powerbi.com/groups/me/reports/21fa06b7-2fbc-4382-9969-e24c5d524027/ReportSection?experience=power-bi">
+                <img src="./Image/caminhao_Betoneira.png" alt="">
+                <label for="sec_alvest">FORNECIMENTO</label>
+                </a>
+            </section>
+        </div>  
+        <div class="divisao2" id="divisao2">   
+            <section class="sec_alvest">
+                <a href="https://app.powerbi.com/groups/me/reports/5623f726-5787-4a61-b451-0bdd5bafe10b/ReportSection?experience=power-bi">
+                <img src="./Image/fluxoF.jpg" alt="">
+                <label for="sec_alvest">FLUXO FINANCEIRO</label>
+                </a>
+            </section>
+            <section class="sec_estacas">
+                <a href="https://app.powerbi.com/groups/me/reports/8933c14d-a48b-4c74-b58c-e54eddb0ed22/ReportSectionfc8ade41c9dd0842e000?experience=power-bi">
+                <img src="./Image/acompanhamentoObra.jpg" alt="">
+                <label for="sec_estacas">ACOMPANHAMENTO DE OBRA</label>
+                </a>
+            </section>
+        </div>  
+        <button id="but_animacao" onclick="animacao2()"><i class="material-icons">chevron_right</i></button>
+    </div>
+    <div class="input-s">
+        <input type="radio" name="input_radio" id="radio1" checked onclick="animacao1()">
+        <input type="radio" name="input_radio" id="radio2" onclick="animacao2()">
+    </div>
+
+    <script src="./dynamicTyping_Home.js"></script>
+</body>
+</html>

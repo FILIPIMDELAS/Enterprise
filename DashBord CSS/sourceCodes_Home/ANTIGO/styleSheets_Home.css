@@ -1,0 +1,304 @@
+:root{
+    --cor-vermelho: rgba(119, 14, 14, 1);
+    --cor-branco: rgb(255, 255, 255, 1);
+    --cor-preto: rgb(0, 0, 0, 1);
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100vw;
+    background-color: lightgray;
+    transition: 0.2s linear;
+}
+
+header{
+    display: flex;
+    background-color: var(--cor-vermelho);
+    height: 6%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: inherit;
+    align-items: start;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+}
+
+.menu_flutuante{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.material-icons{
+    display: flex;
+    padding-top: 9px;
+    margin-right: 5px;
+    color: white;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+    color: lightgray;
+}
+
+menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-top: 9px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+menu > ol{
+    display: flex;
+    flex-direction: column;
+}
+
+menu > ol > ul{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+    width: 100%;
+    height: 35px;
+}
+
+menu > ol > ul:hover{
+    cursor: pointer;
+}
+
+menu > ol > ul > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+menu > ol > ul:hover{
+    background-color: rgb(238, 238, 238);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.input_cabecalho{
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    border-radius: 3px;
+    height: 60%;
+    width: 35%;
+    font-size: 1.1vw;
+    margin-right: 8%;
+}
+
+.input_cabecalho::placeholder{
+    color: black;
+    padding: 10px;
+}
+
+.usuario{
+    display: flex;
+    height: 100%;
+    width: 15%;
+    padding: 10px 0px 10px 10px;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: rgb(255, 255, 255);
+
+    & label{
+        display: flex;
+        text-align: center;
+    }
+
+    & .img_usuario{
+        display: flex;
+        width: auto;
+        height: 50%;
+        margin: 15px;
+    }
+}
+
+/* fim do header e inicio do corpo */
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 94%;
+}
+
+.div_lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 13%;
+
+    & nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        & .a_nav{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            color: rgb(78, 78, 78);
+            font-size: 1em;
+            text-decoration: none;
+            padding: 0px 10px 0px 6px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        & .a_nav:hover{
+            background-color: rgb(238, 238, 238);
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+       }
+    }   
+}
+
+.div_section_mae{
+    display: flex;
+    flex-direction: inherit;
+    height: 100%;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+
+    & .coluna_central{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 48%;
+        margin: 1%;
+
+        & .div_bi{
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin: 1% 10% 1% 1%;
+
+            & .img_bi{
+                display: flex;
+                width: 96%;
+                height: auto;
+                margin: 2%;
+                opacity: 0.8;
+            }
+
+            & .img_bi:hover{
+                width: 98%;
+                opacity: 1;
+            }
+            
+            & .label_bi{
+                font-size: 1vw;
+                margin-bottom: 2%;
+                color: rgb(78, 78, 78)
+            }
+        }
+
+        & .div_bi:hover{
+            background-color: rgb(236, 236, 236);
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu{
+        width: 30%;
+
+    }
+    menu{
+        width: 100px;
+    } 
+    
+    menu > ol > ul{
+        height: 15px;
+    }
+
+    menu > ol > ul > a{
+        font-size: 0.5em;
+    }
+    
+    .usuario{
+        font-size: 0.5em;
+    }
+
+    .input_cabecalho{
+        font-size: 0.6em;
+        padding-left: 2%;
+    }
+
+    .input_cabecalho::placeholder{
+        padding: 0px;
+    }
+
+    .div_lateral{
+        width: 20%;
+    }      
+
+    .div_lateral{
+        & nav{
+
+            & .a_nav{
+                height: 40px;
+                font-size: 0.48em;
+            }
+        }
+    }
+
+    .div_section_mae{
+        flex-direction: column;
+
+        & .coluna_central{
+            width: 96%;
+            margin: 2%;
+
+            & .div_bi{
+                & .img_bi{
+                    width: 92%;
+                    margin: 4%;
+                }
+                & .img_bi:hover{
+                    width: 94%;
+                }
+            }
+        }
+
+        & label{
+            font-size: 0.6em;
+        }
+    }
+}
+

@@ -1,0 +1,172 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url(./image/Design\ sem\ nome\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    background-color: #0000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 330px;
+}
+
+.icone_fgr{
+    position: absolute;
+    height: auto;
+    width: 6%;
+    min-width: 110px;
+    border-radius: 50%;
+    margin-bottom: 300px;
+}
+
+.div_login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+input{
+    background-color:  rgb(233, 233, 233);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 3px 2px;
+    font-size: 0.95em;
+}
+
+input::placeholder{
+    font-size: 0.9em;
+}
+
+#icone_person{
+    position: absolute;
+    z-index: 10;
+    margin-left: 200px;
+    font-size: 1.2em;
+    color: rgb(109, 109, 109);
+}
+
+.email{
+    margin-top: 20%;
+}
+
+#email, #senha{
+    border: none;
+    height: 120%;
+}
+
+#icone_visib{
+    position: absolute;
+    z-index: 10;
+    margin-left: 200px;
+    font-size: 1.2em;
+    color: rgb(109, 109, 109);
+}
+
+#icone_visib:hover{
+    cursor: pointer;
+}
+
+#span_email, #span_senha{
+    display: none;
+    color: red;
+    margin: -2px auto -2px 0px;
+    font-size: 0.6em;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(212, 71, 71);
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: bolder;
+}
+
+.but_cadNew{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(212, 71, 71);
+    color: white;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.but_cadNew:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: bolder;
+}
+
+.rec_senha_p{
+    color:  rgb(109, 109, 109);
+    font-size: 0.8em;
+}
+
+.rec_senha_b{
+    background-color: #0000;
+    color: rgb(212, 71, 71);
+    font-weight: bold;
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+.rec_senha_b:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#span_login{
+    margin: 5px auto -5px auto;
+    display:none;
+    font-size: 0.7em;
+    color: lightgreen;
+    text-shadow: -1px -1px 0 darkgreen,  
+                 1px -1px 0 darkgreen,
+                 -1px 1px 0 darkgreen,
+                 1px 1px 0 darkgreen;
+    font-weight: bolder;
+}

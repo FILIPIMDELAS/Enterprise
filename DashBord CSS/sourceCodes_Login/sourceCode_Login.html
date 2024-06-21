@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAD - LOGIN</title>
+
+    <link rel="stylesheet" href="./styleSheet_Login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <img src="./image/Imagem do WhatsApp de 2024-04-18 à(s) 11.10.44_e57120be.jpg" alt="" class="icone_fgr">
+        <div class="div_login">
+            <section class="email">
+                <input type="email" placeholder="Usuario" id="email">
+                <i id="icone_person" class="material-icons">person</i>
+            </section>
+            <span id="span_email">Por favor preencha o campo</span>
+            <section class="senha">
+                <input type="password" placeholder="Senha" id="senha" onkeydown="executarFuncao(event)">
+                <i onclick="mostrasenha()" id="icone_visib" class="material-icons">visibility_off</i>
+            </section>
+            <span id="span_senha">Por favor preencha o campo</span>
+            <div class="botoes">
+                <button type="button" class="submit" onclick="verificaCamposVazios()">LOGIN</button>
+                <button type="button" class="but_cadNew" onclick="redirecionaCadNew()">CADASTRAR</button>
+                <span id="span_login">LOGIN REALIZADO COM SUCESSO</span>
+                <p class="rec_senha_p">Esqueceu sua senha? <button onclick="redirecionaRecSenha()" class="rec_senha_b">Recuperar Senha</button></p>
+            </div>
+        </div>
+        <i></i>
+        <a href="../sourceCodes_Home/sourceCod_Home.html"></a>
+    </div>
+
+    <script src="./dynamicTyping_Login.js"></script>
+</body>
+</html>

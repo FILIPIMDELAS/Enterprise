@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento</title>
+    <link rel="stylesheet" href="styleSheets_acomp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="header_header">
+        <div class="div_header_1">
+            <i id="icone_email" class="material-icons" >menu</i>
+            <img src="" alt="">
+            <h6>Workspace</h6>
+            <i id="icone_email" class="material-icons">expand_more</i>
+            <h6>Recent</h6>
+            <i id="icone_email" class="material-icons">expand_more</i>
+            <h6>Starred</h6>
+            <i id="icone_email" class="material-icons">expand_more</i>
+            <h6 id="create" onclick="apareceSpan()">CREATE NEW CARD</h6>
+            <span id="span_titulo">
+                <input type="text" id="input_titulo" placeholder="Titulo do Card">
+                <i id="icone_adicionar" class="material-icons" onclick="createDiv()">add</i>
+            </span>
+        </div>
+        <div class="div_header_2">
+            <i id="icone_email" class="material-icons">search</i>
+            <input type="search">
+            <i id="icone_email" class="material-icons">notifications</i>
+            <i id="icone_email" class="material-icons">business_center</i>
+            <i id="icone_email" class="material-icons">settings</i>
+            <img src="./image/close-no-homem-sorrindo-na-natureza_23-2150771075.jpg" alt="">
+        </div>
+    </header>
+    <div id="container"></div>
+    
+    <script src="./dynamicTyping_acomp.js"></script>
+</body>
+</html>

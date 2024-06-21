@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleSheets_cadNew.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>EFT - CADASTRO</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRE-SE</h1>
+        <section class="sec_Nome">
+            <label for="input_Nome">Nome</label>
+            <input class="input_Nome" type="text" id="input_Nome">
+            <span id="span_erro_nome">Por favor preencha o campo</span>
+            <i id="icone_person" class="material-icons">person</i>
+        </section>
+        <section class="sec_Email">
+            <label for="input_Email">E-mail</label>
+            <input class="input_Email" type="email" id="input_Email">
+            <span id="span_erro_email">Por favor preencha o campo</span>
+            <i id="icone_email" class="material-icons">email</i>
+        </section>
+        <section class="sec_Senha">
+            <label for="input_Senha">Senha</label>
+            <input class="input_Senha" type="password" id="input_Senha">
+            <span id="span_erro_senha">Por favor preencha o campo</span>
+            <i onclick="mostrasenha1()" id="icone_visib1" class="material-icons">visibility_off</i>
+        </section>
+        <section class="sec_confirmSenha">
+            <label for="input_confirmSenha">Confirme sua senha</label>
+            <input class="input_confirmSenha" type="password" id="input_confirmSenha">
+            <span id="span_erro_recSenha">Por favor preencha o campo</span>
+            <i onclick="mostrasenha2()" id="icone_visib2" class="material-icons">visibility_off</i>           
+        </section>
+        <button class="but_submit" type="submit" onclick="validacampo()">CADASTRAR</button>
+        <span id="span_login">CADASTRO REALIZADO COM SUCESSO</span>
+        <label>Já possue uma conta? <button onclick="redirecionaLogin()">Faça Login</button></label>
+    </div>
+
+    <script src="./dynamicTyping_cadNew.js"></script>
+</body>
+</html>
